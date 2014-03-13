@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Responsive image ad</title>
+
+  <style type="text/css">
+
+    html, body {
+      /* used for areas outside the image */
+      background-color: #000;
+
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    /* replace the images with your own ad images */
+    /* for offline support, use relative paths and include the images in your ad package */
+
+    /* base style displays large portrait image */
+    #adImageDiv {
+      background: url(img/768x1024.jpg) no-repeat center center fixed; 
+    }
+
+    /* small portrait override */
+    @media screen and (max-width: 400px) {
+      #adImageDiv {
+        background: url(img/320x568.jpg) no-repeat center center fixed; 
+      }
+    }
+
+    /* landscape override */
+    @media screen and (orientation: landscape) {
+      #adImageDiv {
+        background: url(img/1024x768.jpg) no-repeat center center fixed; 
+      }
+    }
+
+    #adImageDiv {
+      /* if you want the image to be cropped to fill the view, use "cover" instead of "contain" */
+      -webkit-background-size: contain;
+      -moz-background-size: contain;
+      -o-background-size: contain;
+      background-size: contain;
+
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+    }
+
+  </style
+
+  </head>
+
+  <body>
+    /* replace the link target with whatever you want the ad to link to when tapped */
+    <a href="http://www.gtxcel.com"><div id="adImageDiv"></div></a>
+  </body>
+</html>
