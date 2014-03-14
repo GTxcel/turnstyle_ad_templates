@@ -2,7 +2,8 @@
 
 It's purpose is to allow for a responsive-like experience where a screen-size appropriate ad is displayed to all users even if the advertisement itself isn't responsive. This template displays one of three images depending on the size and orientation of the device. Images are centered, scaled (down) and fit to the device.
 
-[See this template in action here](http://turnstyle.texterity.com/turnstyle/misc/static_assets/index.html). Resize your browser window to see how it responds at different sizes.
+## [See this template in action here](http://turnstyle.texterity.com/turnstyle/misc/static_assets/index.html). 
+Resize your browser window to see how it responds at different sizes.
 
 ## Instructions
 
