@@ -1,12 +1,13 @@
 # Turnstyle Advertisement Templates
 
-## Purpose
+GTxcel provides a number of out of the box templates so customers can easily create [rich advertisements](http://docs.gtxcel.com/creating-html5-ads/) for their [Turnstyle editions](http://docs.gtxcel.com/getting-started-with-turnstyle/). Below is a list of available templates and some instructions on how to leverage them to create great experiences for your readers and advertisers.
 
-To provide GTxcel customers a way to easily create [rich advertisements](http://docs.gtxcel.com/creating-html5-ads/) for their [Turnstyle editions](http://docs.gtxcel.com/getting-started-with-turnstyle/) through the use of common templates.
+# Responsive Image Swap
+### [Demo](https://rawgit.com/GTxcel/turnstyle_ad_templates/master/responsive_image_swap/index.html)
 
-## [Download](https://github.com/GTxcel/turnstyle_ad_templates/archive/master.zip)
+Many advertisers aren’t quite ready to jump into the world of responsive advertising quite yet. This template allows advertisers to produce a responsive-like experience using a few static assets. A screen-size appropriate image is displayed to all users even if the advertisement itself isn't responsive. This template displays one of three images depending on the size and orientation of the device. Images are centered, scaled (down) and fit to the device.
 
-## Instructions
+# Instructions
 
 1. Download and unzip the ad templates.
 2. Each folder in the zip file contains one template with a README file with instructions, the template html file(s), and all the required assets such as images, css and javascript files.
