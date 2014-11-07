@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Video ad</title>
+    <script type="text/javascript" src="video-ad.js"></script>
+    <link href="styles.css" rel="stylesheet">
+
+    <style type="text/css">
+      #lightbox {
+        /* size and positioning for the video on large landscape */
+        right: 4%;
+        top: 4%;
+        width: 40%; /* height is calculated automatically */
+      }
+      @media screen and (orientation: portrait) {
+        #lightbox {
+          /* size and positioning for the video on large portrait */
+          left: 4%;
+          top: 4%;
+          width: 45%; /* height is calculated automatically */
+        }
+      }
+      @media screen and (orientation: portrait) and (max-width: 500px) {
+        #playButton {
+          /* positioning for the play button on small portrait */
+          left: 50%;
+          top: 50%;
+        }
+        #lightbox {
+          /* DON'T TOUCH...resets for video container sizing on phone */
+          width: 100%;
+          height: 100%;
+          top: 0px;
+          left: 0px;
+          right: 0px;
+          bottom: 0px;
+        }
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <div id="adWrapper">
+      <div id="imageWrapper">
+
+        <!--Replace the link URL here-->
+        <a href="http://www.gtxcel.com">
+
+          <img id="landscapeImage" src="landscape.jpg"/>
+          <img id="portraitImage" src="portrait.jpg"/>
+          <img id="smallImage" src="small.jpg"/>
+        </a>
+        <div id="lightbox">
+          <div id="lightboxInner">
+
+            <!--Replace the video embed tag here-->
+            <script type="text/javascript" src="http://content.jwplatform.com/players/q2kbhxHV-mNGa9JjH.js"></script>
+            
+            <div id="closeButton" onclick="closeVideo()"><p>Close</p></div>
+          </div>
+        </div>
+        <div id="playButton" onclick="playVideo()">
+          <img id="playArrow" src="playIcon.png">
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
